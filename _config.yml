@@ -1,0 +1,18 @@
+title: Wanwi Ju
+tagline: PhD Candidate, KAIST
+description: >-
+  Wanwi Ju — PhD Candidate at KAIST researching strategic management of
+  technology and innovation, science of science, and innovation ecosystems.
+author: Wanwi Ju
+email: wanwiju@kaist.ac.kr
+url: "https://juwanwi.github.io"
+
+permalink: pretty
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
