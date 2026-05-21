@@ -1,138 +1,447 @@
----
-layout: default
-title: Wanwi Ju
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanwi Ju | PhD Candidate, KAIST</title>
+    <meta name="description" content="Wanwi Ju — PhD Candidate at KAIST researching strategic management of technology and innovation, science of science, and innovation ecosystems.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<header class="masthead">
-  <h1>Wanwi Ju</h1>
-  <p class="role">PhD Candidate, School of Business and Technology Management, KAIST</p>
-  <p class="contact">
-    <a href="mailto:wanwiju@kaist.ac.kr">wanwiju@kaist.ac.kr</a>
-    &nbsp;·&nbsp;
-    <a href="https://www.linkedin.com/in/ju-wanwi-22157b346/" rel="me">LinkedIn</a>
-    &nbsp;·&nbsp; +82-10-2886-3375
-  </p>
-</header>
+    <style>
+        :root {
+            --primary-bg: #f8f9fa;
+            --sidebar-bg: #1a1e24;
+            --sidebar-text: #e9ecef;
+            --text-main: #343a40;
+            --text-muted: #6c757d;
+            --accent-color: #0d6efd;
+            --accent-hover: #0b5ed7;
+            --border-color: #dee2e6;
+            --card-bg: #ffffff;
+        }
 
-<section id="about">
-  <h2>About</h2>
-  <p>
-    I am a PhD candidate in the School of Business and Technology Management at
-    KAIST, advised by Professors Hyun Ju Jung and Wonjoon Kim. My research sits
-    at the intersection of innovation strategy and the science of science, with
-    a particular focus on how the composition of inventor teams shapes the
-    impact and disruptiveness of technological invention.
-  </p>
-</section>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-<section id="research">
-  <h2>Research Interests</h2>
-  <ul>
-    <li><strong>Primary:</strong> Strategic Management of Technology and Innovation; Science of Science</li>
-    <li><strong>Secondary:</strong> Innovation Ecosystems; Entrepreneurship Strategy</li>
-  </ul>
-</section>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            background-color: var(--primary-bg);
+            line-height: 1.7;
+            display: flex;
+            min-height: 100vh;
+        }
 
-<section id="education">
-  <h2>Education</h2>
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: #111;
+            margin-bottom: 1rem;
+        }
 
-  <div class="entry">
-    <h3>PhD in Business and Technology Management</h3>
-    <p class="meta">KAIST · 2022 – present</p>
-    <p>Advisors: Prof. Hyun Ju Jung, Prof. Wonjoon Kim · GPA 3.90 / 4.3</p>
-  </div>
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            display: inline-block;
+        }
 
-  <div class="entry">
-    <h3>Exchange Student</h3>
-    <p class="meta">Tokyo Institute of Technology · 2023</p>
-    <p>CAMPUS Asia Plus Program</p>
-  </div>
+        h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            color: #2b3035;
+        }
 
-  <div class="entry">
-    <h3>MS in Business and Technology Management</h3>
-    <p class="meta">KAIST · 2020 – 2022</p>
-    <p>Advisor: Prof. Wonjoon Kim · GPA 3.88 / 4.3</p>
-    <p><em>Thesis:</em> Entrepreneurial Ecosystem and Coworking Space: The Moderating Role of Coworking Space in Entrepreneurship Culture</p>
-  </div>
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-  <div class="entry">
-    <h3>BS in Business Administration</h3>
-    <p class="meta">Ewha Womans University · 2012 – 2018</p>
-    <p>Double Major: Business Administration; Japanese Language and Culture</p>
-  </div>
-</section>
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
 
-<section id="publications">
-  <h2>Publications</h2>
-  <div class="entry">
-    <p>
-      <span class="pub-author-self">Ju, W.</span>, Kim, G., &amp; Kim, W. (2026).
-      &ldquo;Coworking Space and Firm Performance for Early-Stage Start-Ups.&rdquo;
-      <em>Applied Economics Letters.</em>
-      <a href="https://doi.org/10.1080/13504851.2026.2645766">doi:10.1080/13504851.2026.2645766</a>
-    </p>
-  </div>
-</section>
+        /* Sidebar Styling */
+        .sidebar {
+            width: 320px;
+            background: var(--sidebar-bg);
+            color: var(--sidebar-text);
+            padding: 3rem 2rem;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+        }
 
-<section id="working-papers">
-  <h2>Working Papers</h2>
-  <div class="entry">
-    <p>
-      <span class="pub-author-self">Ju, W.</span>
-      &ldquo;Age Composition of Inventor Teams and Innovation Quality: How
-      Intergenerational Knowledge Recombination Shapes Patent Impact.&rdquo;
-      <span class="pill">In progress</span>
-    </p>
-    <p class="venue">Dissertation chapter.</p>
-  </div>
-</section>
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
 
-<section id="conferences">
-  <h2>Conference Presentations</h2>
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
 
-  <div class="entry">
-    <p>&ldquo;Age Composition of Inventor Teams: Technological Impact and Disruptiveness of Invention.&rdquo;</p>
-    <ul>
-      <li><em>R&amp;D Management Workshop 2026 — The Future of R&amp;D Management in the Era of AI</em>, Korea University, Seoul, May 29–30, 2026.</li>
-      <li><em>DRUID 2026</em>, Copenhagen, Denmark, June 8–10, 2026.</li>
-      <li><em>2026 Atlanta Academy on Science and Innovation Policy</em>, Jimmy and Rosalynn Carter School of Public Policy, Atlanta, GA.</li>
-    </ul>
-  </div>
+        .sidebar h1 {
+            color: #fff;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
 
-  <div class="entry">
-    <p>&ldquo;Impact of Coworking Space on Firm&rsquo;s Performance within the Entrepreneurial Ecosystem.&rdquo;</p>
-    <ul>
-      <li><em>SMS 43rd Annual Conference</em>, Toronto, Canada, September 2023.</li>
-      <li><em>DRUID 23rd Annual Conference</em>, Lisbon, Portugal, June 2023.</li>
-      <li><em>KSMIE Summer Conference</em>, Seoul, Korea, July 2022.</li>
-      <li><em>KAIST Technology-Organization-Strategy &amp; MOT Integrated Symposium</em>, November 2021.</li>
-    </ul>
-  </div>
-</section>
+        .sidebar .title {
+            font-size: 0.95rem;
+            color: #adb5bd;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
 
-<section id="workshops">
-  <h2>Research Workshops</h2>
-  <ul>
-    <li>The 6th KAIST BTM Research Workshop — February 2026</li>
-    <li>Workshop on Innovation and Science Studies — January 2026</li>
-  </ul>
-</section>
+        .contact-info {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
 
-<section id="skills">
-  <h2>Skills</h2>
-  <dl class="facts">
-    <dt>Software</dt><dd>Stata · Python (pandas, networkx, matplotlib) · R</dd>
-    <dt>Databases</dt><dd>USPTO PatentsView · Web of Science · OpenAlex</dd>
-    <dt>Languages</dt><dd>Korean (native) · English (professional) · Japanese (proficient)</dd>
-  </dl>
-</section>
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
 
-<section id="contact">
-  <h2>Contact</h2>
-  <dl class="facts">
-    <dt>Email</dt><dd><a href="mailto:wanwiju@kaist.ac.kr">wanwiju@kaist.ac.kr</a></dd>
-    <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/ju-wanwi-22157b346/">linkedin.com/in/ju-wanwi</a></dd>
-    <dt>Phone</dt><dd>+82-10-2886-3375</dd>
-    <dt>Office</dt><dd>School of Business and Technology Management, KAIST</dd>
-  </dl>
-</section>
+        .contact-item i {
+            margin-right: 10px;
+            color: var(--accent-color);
+            width: 20px;
+        }
+
+        .contact-item a {
+            color: var(--sidebar-text);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #fff;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: auto;
+        }
+
+        .social-links a {
+            color: #adb5bd;
+            font-size: 1.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            flex: 1;
+            margin-left: 320px;
+            padding: 4rem 5%;
+            max-width: 1000px;
+        }
+
+        .section {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02), 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 2.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: #495057;
+        }
+
+        /* Lists and Items */
+        .item-list {
+            list-style: none;
+        }
+
+        .item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .item-title {
+            font-weight: 600;
+            color: #212529;
+            font-size: 1.1rem;
+        }
+
+        .item-meta {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .item-desc {
+            font-size: 0.95rem;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background: rgba(13, 110, 253, 0.1);
+            color: var(--accent-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Skills table */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 15px;
+            font-size: 0.95rem;
+        }
+        .skills-grid dt {
+            font-weight: 600;
+            color: #212529;
+        }
+        .skills-grid dd {
+            color: #495057;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 3rem 1rem;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Profile -->
+    <aside class="sidebar">
+        <img src="assets/profile.png" alt="Wanwi Ju" class="profile-img">
+        
+        <h1>Wanwi Ju</h1>
+        <div class="title">
+            PhD Candidate<br>
+            School of Business and Technology Management<br>
+            <strong>KAIST</strong>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:wanwiju@kaist.ac.kr">wanwiju@kaist.ac.kr</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+82-10-2886-3375</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Daejeon, South Korea</span>
+            </div>
+            <div class="contact-item" style="font-size: 0.85rem; margin-top: 10px;">
+                <i class="fas fa-building"></i>
+                <span style="text-align: left;">School of Business and Technology Management, KAIST</span>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ju-wanwi-22157b346/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <!-- <a href="#" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a> -->
+            <a href="https://github.com/juwanwi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <section class="section" id="about">
+            <h2>About</h2>
+            <p class="about-text">
+                I am a PhD candidate in the School of Business and Technology Management at <strong>KAIST</strong>, advised by Professors Hyun Ju Jung and Wonjoon Kim. 
+                My research sits at the intersection of innovation strategy and the science of science, with a particular focus on how the composition of inventor teams shapes the impact and disruptiveness of technological invention.
+            </p>
+            
+            <h3 style="margin-top: 2rem;">Research Interests</h3>
+            <div class="tag-container">
+                <span class="tag">Strategic Management of Technology and Innovation</span>
+                <span class="tag">Science of Science</span>
+                <span class="tag">Innovation Ecosystems</span>
+                <span class="tag">Entrepreneurship Strategy</span>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <ul class="item-list">
+                <li class="item">
+                    <div class="item-title">PhD in Business and Technology Management</div>
+                    <div class="item-meta">KAIST · 2022 – present</div>
+                    <div class="item-desc">
+                        Advisors: Prof. Hyun Ju Jung, Prof. Wonjoon Kim<br>
+                        GPA: 3.90 / 4.3
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-title">Exchange Student</div>
+                    <div class="item-meta">Tokyo Institute of Technology · 2023</div>
+                    <div class="item-desc">CAMPUS Asia Plus Program</div>
+                </li>
+                <li class="item">
+                    <div class="item-title">MS in Business and Technology Management</div>
+                    <div class="item-meta">KAIST · 2020 – 2022</div>
+                    <div class="item-desc">
+                        Advisor: Prof. Wonjoon Kim (GPA: 3.88 / 4.3)<br>
+                        <em>Thesis: Entrepreneurial Ecosystem and Coworking Space: The Moderating Role of Coworking Space in Entrepreneurship Culture</em>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-title">BS in Business Administration</div>
+                    <div class="item-meta">Ewha Womans University · 2012 – 2018</div>
+                    <div class="item-desc">Double Major: Business Administration; Japanese Language and Culture</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section" id="publications">
+            <h2>Publications & Working Papers</h2>
+            
+            <h3>Publications</h3>
+            <ul class="item-list">
+                <li class="item">
+                    <div class="item-title">Coworking Space and Firm Performance for Early-Stage Start-Ups.</div>
+                    <div class="item-meta"><strong>Ju, W.</strong>, Kim, G., & Kim, W. (2026) · <em>Applied Economics Letters</em></div>
+                    <div class="item-desc">
+                        <a href="https://doi.org/10.1080/13504851.2026.2645766" target="_blank" class="tag"><i class="fas fa-external-link-alt"></i> doi:10.1080/13504851.2026.2645766</a>
+                    </div>
+                </li>
+            </ul>
+
+            <h3>Working Papers</h3>
+            <ul class="item-list">
+                <li class="item">
+                    <div class="item-title">Age Composition of Inventor Teams and Innovation Quality: How Intergenerational Knowledge Recombination Shapes Patent Impact.</div>
+                    <div class="item-meta"><strong>Ju, W.</strong> · <em>In progress (Dissertation chapter)</em></div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section" id="presentations">
+            <h2>Conference Presentations</h2>
+            <ul class="item-list">
+                <li class="item">
+                    <div class="item-title">Age Composition of Inventor Teams: Technological Impact and Disruptiveness of Invention.</div>
+                    <ul class="item-desc" style="padding-left: 20px; margin-top: 10px;">
+                        <li>R&D Management Workshop 2026 — The Future of R&D Management in the Era of AI, Korea University, Seoul, May 29–30, 2026.</li>
+                        <li>DRUID 2026, Copenhagen, Denmark, June 8–10, 2026.</li>
+                        <li>2026 Atlanta Academy on Science and Innovation Policy, Jimmy and Rosalynn Carter School of Public Policy, Atlanta, GA.</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <div class="item-title">Impact of Coworking Space on Firm’s Performance within the Entrepreneurial Ecosystem.</div>
+                    <ul class="item-desc" style="padding-left: 20px; margin-top: 10px;">
+                        <li>SMS 43rd Annual Conference, Toronto, Canada, September 2023.</li>
+                        <li>DRUID 23rd Annual Conference, Lisbon, Portugal, June 2023.</li>
+                        <li>KSMIE Summer Conference, Seoul, Korea, July 2022.</li>
+                        <li>KAIST Technology-Organization-Strategy & MOT Integrated Symposium, November 2021.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <dl class="skills-grid">
+                <dt>Software</dt>
+                <dd>Stata · Python (pandas, networkx, matplotlib) · R</dd>
+                
+                <dt>Databases</dt>
+                <dd>USPTO PatentsView · Web of Science · OpenAlex</dd>
+                
+                <dt>Languages</dt>
+                <dd>Korean (native) · English (professional) · Japanese (proficient)</dd>
+            </dl>
+        </section>
+
+        <section class="section" id="workshops">
+            <h2>Research Workshops</h2>
+            <ul class="item-list">
+                <li class="item">
+                    <div class="item-title">The 6th KAIST BTM Research Workshop</div>
+                    <div class="item-meta">February 2026</div>
+                </li>
+                <li class="item">
+                    <div class="item-title">Workshop on Innovation and Science Studies</div>
+                    <div class="item-meta">January 2026</div>
+                </li>
+            </ul>
+        </section>
+
+        <footer style="text-align: center; margin-top: 3rem; color: var(--text-muted); font-size: 0.9rem;">
+            © 2026 Wanwi Ju. Last updated May 2026.
+        </footer>
+    </main>
+
+</body>
+</html>
